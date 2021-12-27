@@ -1,1 +1,1 @@
-# symmetrical-happiness
+# Our othello chess project
