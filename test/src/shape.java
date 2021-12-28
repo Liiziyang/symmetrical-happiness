@@ -1,0 +1,57 @@
+public abstract class shape {
+    protected double x;
+    protected double y;
+    protected Shapecolor color = Shapecolor.GRAY;
+    private static int screenSize = 10;
+
+    public shape(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public double getX() {
+
+        return x;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public Shapecolor getColor() {
+        return color;
+    }
+
+    public void setColor(Shapecolor color) {
+        this.color = color;
+    }
+
+    public static int getScreenSize() {
+        return screenSize;
+    }
+
+    public static void setScreenSize(int screenSize) {
+        shape.screenSize = screenSize;
+    }
+
+
+    @Override
+    public String toString() {
+        return " x=" + x +
+                ", y=" + y +
+                ", color=" + color;
+    }
+
+    public void checkColor() {
+    }
+
+}
+
